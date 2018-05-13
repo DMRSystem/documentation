@@ -31,8 +31,12 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - pymdownx.arithmatex
 
 plugins:
   - search
   - awesome-pages:
       collapse_single_pages: true
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
