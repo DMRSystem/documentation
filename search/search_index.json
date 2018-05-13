@@ -62,7 +62,7 @@
         },
         {
             "location": "/requirements/features/",
-            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line\n\n\nTracking Custom Information\n\u00b6\n\n\nSongs vs. Samples\n\u00b6\n\n\nGenerating Playlists\n\u00b6\n\n\nSetup from Scratch\n\u00b6",
+            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nTracking Custom Information\n\u00b6\n\n\nF4: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist via the command line.\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.",
             "title": "Features"
         },
         {
@@ -87,8 +87,18 @@
         },
         {
             "location": "/requirements/features/#f3-modifying-song-information-via-the-command-line",
-            "text": "User can modify song information via the command line",
+            "text": "User can modify song information via the command line.",
             "title": "F3: Modifying Song information via the Command Line"
+        },
+        {
+            "location": "/requirements/features/#f9-add-sample-via-command-line",
+            "text": "User can add a sample to the library via the command line.",
+            "title": "F9: Add Sample via Command Line"
+        },
+        {
+            "location": "/requirements/features/#f10-remove-sample-via-command-line",
+            "text": "User can remove a sample from the library via the command line.",
+            "title": "F10: Remove Sample via Command Line"
         },
         {
             "location": "/requirements/features/#tracking-custom-information",
@@ -96,9 +106,34 @@
             "title": "Tracking Custom Information"
         },
         {
+            "location": "/requirements/features/#f4-number-of-plays",
+            "text": "System automatically tracks number of plays for each song.",
+            "title": "F4: Number of Plays"
+        },
+        {
+            "location": "/requirements/features/#f5-track-date-added",
+            "text": "System automatially tracks date added for each song.",
+            "title": "F5: Track Date Added"
+        },
+        {
+            "location": "/requirements/features/#f6-popularity",
+            "text": "User can modify popularity/rating for each song.",
+            "title": "F6: Popularity"
+        },
+        {
+            "location": "/requirements/features/#f7-number-of-requests",
+            "text": "System tracks number of times each song has been requested.",
+            "title": "F7: Number of Requests"
+        },
+        {
             "location": "/requirements/features/#songs-vs-samples",
             "text": "",
             "title": "Songs vs. Samples"
+        },
+        {
+            "location": "/requirements/features/#f8-sample-tracking",
+            "text": "System tracks samples separately from songs.",
+            "title": "F8: Sample Tracking"
         },
         {
             "location": "/requirements/features/#generating-playlists",
@@ -106,9 +141,19 @@
             "title": "Generating Playlists"
         },
         {
+            "location": "/requirements/features/#f11-chronological-playlist",
+            "text": "User can generate a chronological playlist via the command line.",
+            "title": "F11: Chronological Playlist"
+        },
+        {
             "location": "/requirements/features/#setup-from-scratch",
             "text": "",
             "title": "Setup from Scratch"
+        },
+        {
+            "location": "/requirements/features/#f12-system-setup",
+            "text": "User can issue a single command via the command line to set up the entire system.",
+            "title": "F12: System Setup"
         },
         {
             "location": "/requirements/use-cases/",
