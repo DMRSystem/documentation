@@ -46,6 +46,10 @@ System tracks number of times each song has been requested.
 
 System tracks samples separately from songs.
 
+### F13: Switch between Song and Sample
+
+Once the user has added a Song to the library, the user can convert the song to a sample and vice versa.
+
 ## [Generating Playlists](needs/#n4-generating-playlists)
 
 ### F11: Chronological Playlist
