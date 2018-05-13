@@ -9,4 +9,26 @@
     </url>
     
 
+    
+        
+    <url>
+     <loc>https://github.com/DMRSystem/requirements/needs/</loc>
+     <lastmod>2018-05-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/DMRSystem/requirements/features/</loc>
+     <lastmod>2018-05-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/DMRSystem/requirements/use-cases/</loc>
+     <lastmod>2018-05-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>

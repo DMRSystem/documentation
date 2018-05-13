@@ -9,6 +9,116 @@
             "location": "/#welcome",
             "text": "Welcome to the DMR System documentation!",
             "title": "Welcome"
+        },
+        {
+            "location": "/requirements/needs/",
+            "text": "Needs\n\u00b6\n\n\nManaging the Library\n\u00b6\n\n\nN1: CRUD Operations on Library\n\u00b6\n\n\nCurrently there is not an easy way to manage the DMR library. Songs must be manually added and checked into the repository. Users must manually edit the MP3 tags for the file in order to update the information. Deleting involves manually deleting files and then resyncing the repository.\n\n\nN2: Tracking Custom Information\n\u00b6\n\n\nCurrently there is no way to keep track of custom information for the songs in the library (such as date added, popularity, number of plays, etc.).\n\n\nN3: Songs vs. Samples\n\u00b6\n\n\nThere is no conceptual difference between a \"song\" and a \"sound bite\" or \"sample\" in the library. Any audio imported into the DMR library is imported as a song.\n\n\nIntegrating with Other Programs\n\u00b6\n\n\nN4: Generating Playlists\n\u00b6\n\n\nCurrently, there is no easy way to automatically generate playlists for Mixxx. To create a playlist, Users must import all songs into Mixxx, drag them individually into the playlist, and then export. Users can use programs like \nKid3\n, but the process is more difficult than it should be.\n\n\nGeneral Ease of Use\n\u00b6\n\n\nN5: Setup from Scratch\n\u00b6\n\n\nThere is no easy way to set up the entire system from scratch on a new machine.",
+            "title": "Needs"
+        },
+        {
+            "location": "/requirements/needs/#needs",
+            "text": "",
+            "title": "Needs"
+        },
+        {
+            "location": "/requirements/needs/#managing-the-library",
+            "text": "",
+            "title": "Managing the Library"
+        },
+        {
+            "location": "/requirements/needs/#n1-crud-operations-on-library",
+            "text": "Currently there is not an easy way to manage the DMR library. Songs must be manually added and checked into the repository. Users must manually edit the MP3 tags for the file in order to update the information. Deleting involves manually deleting files and then resyncing the repository.",
+            "title": "N1: CRUD Operations on Library"
+        },
+        {
+            "location": "/requirements/needs/#n2-tracking-custom-information",
+            "text": "Currently there is no way to keep track of custom information for the songs in the library (such as date added, popularity, number of plays, etc.).",
+            "title": "N2: Tracking Custom Information"
+        },
+        {
+            "location": "/requirements/needs/#n3-songs-vs-samples",
+            "text": "There is no conceptual difference between a \"song\" and a \"sound bite\" or \"sample\" in the library. Any audio imported into the DMR library is imported as a song.",
+            "title": "N3: Songs vs. Samples"
+        },
+        {
+            "location": "/requirements/needs/#integrating-with-other-programs",
+            "text": "",
+            "title": "Integrating with Other Programs"
+        },
+        {
+            "location": "/requirements/needs/#n4-generating-playlists",
+            "text": "Currently, there is no easy way to automatically generate playlists for Mixxx. To create a playlist, Users must import all songs into Mixxx, drag them individually into the playlist, and then export. Users can use programs like  Kid3 , but the process is more difficult than it should be.",
+            "title": "N4: Generating Playlists"
+        },
+        {
+            "location": "/requirements/needs/#general-ease-of-use",
+            "text": "",
+            "title": "General Ease of Use"
+        },
+        {
+            "location": "/requirements/needs/#n5-setup-from-scratch",
+            "text": "There is no easy way to set up the entire system from scratch on a new machine.",
+            "title": "N5: Setup from Scratch"
+        },
+        {
+            "location": "/requirements/features/",
+            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line\n\n\nTracking Custom Information\n\u00b6\n\n\nSongs vs. Samples\n\u00b6\n\n\nGenerating Playlists\n\u00b6\n\n\nSetup from Scratch\n\u00b6",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/features/#features",
+            "text": "",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/features/#crud-operations-on-library",
+            "text": "",
+            "title": "CRUD Operations on Library"
+        },
+        {
+            "location": "/requirements/features/#f1-add-song-via-command-line",
+            "text": "User can add a song to the library via the command line.",
+            "title": "F1: Add Song via Command Line"
+        },
+        {
+            "location": "/requirements/features/#f2-remove-song-via-command-line",
+            "text": "User can remove a song from the library via the command line.",
+            "title": "F2: Remove Song via Command Line"
+        },
+        {
+            "location": "/requirements/features/#f3-modifying-song-information-via-the-command-line",
+            "text": "User can modify song information via the command line",
+            "title": "F3: Modifying Song information via the Command Line"
+        },
+        {
+            "location": "/requirements/features/#tracking-custom-information",
+            "text": "",
+            "title": "Tracking Custom Information"
+        },
+        {
+            "location": "/requirements/features/#songs-vs-samples",
+            "text": "",
+            "title": "Songs vs. Samples"
+        },
+        {
+            "location": "/requirements/features/#generating-playlists",
+            "text": "",
+            "title": "Generating Playlists"
+        },
+        {
+            "location": "/requirements/features/#setup-from-scratch",
+            "text": "",
+            "title": "Setup from Scratch"
+        },
+        {
+            "location": "/requirements/use-cases/",
+            "text": "Use Cases\n\u00b6",
+            "title": "Use Cases"
+        },
+        {
+            "location": "/requirements/use-cases/#use-cases",
+            "text": "",
+            "title": "Use Cases"
         }
     ]
 }
