@@ -12,12 +12,48 @@ User can remove a song from the library via the command line.
 
 ### F3: Modifying Song information via the Command Line
 
-User can modify song information via the command line
+User can modify song information via the command line.
+
+### F9: Add Sample via Command Line
+
+User can add a sample to the library via the command line.
+
+### F10: Remove Sample via Command Line
+
+User can remove a sample from the library via the command line.
 
 ## [Tracking Custom Information](needs/#n2-tracking-custom-information)
 
+### F4: Number of Plays
+
+System automatically tracks number of plays for each song.
+
+### F5: Track Date Added
+
+System automatially tracks date added for each song.
+
+### F6: Popularity
+
+User can modify popularity/rating for each song.
+
+### F7: Number of Requests
+
+System tracks number of times each song has been requested.
+
 ## [Songs vs. Samples](needs/#n3-songs-vs-samples)
+
+### F8: Sample Tracking
+
+System tracks samples separately from songs.
 
 ## [Generating Playlists](needs/#n4-generating-playlists)
 
+### F11: Chronological Playlist
+
+User can generate a chronological playlist via the command line.
+
 ## [Setup from Scratch](needs/#n5-setup-from-scratch)
+
+### F12: System Setup
+
+User can issue a single command via the command line to set up the entire system.
