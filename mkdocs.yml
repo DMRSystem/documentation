@@ -1,0 +1,38 @@
+# Project information
+site_name: 'DMR System'
+site_description: 'Documentation for the DMR System project.'
+site_author: 'Connor Boyle'
+site_url: 'https://github.com/DMRSystem'
+
+# Repository
+repo_name: 'DMR System'
+repo_url: 'https://github.com/DMRSystem'
+
+# Copyright
+copyright: '2018 DMR System'
+
+# Configuration
+theme:
+  name: 'material'
+  feature:
+    tabs: true
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - awesome-pages:
+      collapse_single_pages: true

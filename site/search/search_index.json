@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome\n\u00b6\n\n\nWelcome to the DMR System documentation!",
+            "title": "Welcome"
+        },
+        {
+            "location": "/#welcome",
+            "text": "Welcome to the DMR System documentation!",
+            "title": "Welcome"
+        }
+    ]
+}
