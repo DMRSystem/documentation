@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for the DMR System project.">
       
       
-        <link rel="canonical" href="https://github.com/DMRSystem/requirements/use-cases/u10/">
+        <link rel="canonical" href="https://github.com/DMRSystem/requirements/use-cases/u12/">
       
       
         <meta name="author" content="Connor Boyle">
@@ -42,7 +42,7 @@
     
     
       
-        <title>U10: Remove Sample via Command Line (with Command Line Arguments) - DMR System</title>
+        <title>U12: Generate Chronological Playlist (with Command Line Arguments) - DMR System</title>
       
     
     
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#u10-remove-sample-via-command-line-with-command-line-arguments" tabindex="1" class="md-skip">
+      <a href="#u12-generate-chronological-playlist-with-command-line-arguments" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 DMR System
               </span>
               <span class="md-header-nav__topic">
-                U10: Remove Sample via Command Line (with Command Line Arguments)
+                U12: Generate Chronological Playlist (with Command Line Arguments)
               </span>
             
           
@@ -461,6 +461,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../u10/" title="U10: Remove Sample via Command Line (with Command Line Arguments)" class="md-nav__link">
+      U10: Remove Sample via Command Line (with Command Line Arguments)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../u11/" title="U11: Remove Sample via Command Line (without Command Line Arguments)" class="md-nav__link">
+      U11: Remove Sample via Command Line (without Command Line Arguments)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -472,11 +496,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        U10: Remove Sample via Command Line (with Command Line Arguments)
+        U12: Generate Chronological Playlist (with Command Line Arguments)
       </label>
     
-    <a href="./" title="U10: Remove Sample via Command Line (with Command Line Arguments)" class="md-nav__link md-nav__link--active">
-      U10: Remove Sample via Command Line (with Command Line Arguments)
+    <a href="./" title="U12: Generate Chronological Playlist (with Command Line Arguments)" class="md-nav__link md-nav__link--active">
+      U12: Generate Chronological Playlist (with Command Line Arguments)
     </a>
     
       
@@ -546,30 +570,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../u11/" title="U11: Remove Sample via Command Line (without Command Line Arguments)" class="md-nav__link">
-      U11: Remove Sample via Command Line (without Command Line Arguments)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../u12/" title="U12: Generate Chronological Playlist (with Command Line Arguments)" class="md-nav__link">
-      U12: Generate Chronological Playlist (with Command Line Arguments)
-    </a>
   </li>
 
         
@@ -668,34 +668,29 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DMRSystem/edit/master/docs/requirements/use-cases/u10.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/DMRSystem/edit/master/docs/requirements/use-cases/u12.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="u10-remove-sample-via-command-line-with-command-line-arguments">U10: Remove Sample via Command Line (with Command Line Arguments)<a class="headerlink" href="#u10-remove-sample-via-command-line-with-command-line-arguments" title="Permanent link">&para;</a></h1>
+                <h1 id="u12-generate-chronological-playlist-with-command-line-arguments">U12: Generate Chronological Playlist (with Command Line Arguments)<a class="headerlink" href="#u12-generate-chronological-playlist-with-command-line-arguments" title="Permanent link">&para;</a></h1>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>Radio Host removes a sample from the system using the CLI and command line arguments.</p>
+<p>Radio Host generates a chronological playlist of songs in the system using th CLI and command line arguments.</p>
 <h2 id="actors">Actor(s)<a class="headerlink" href="#actors" title="Permanent link">&para;</a></h2>
 <p>Radio Host</p>
 <h2 id="preconditions">Precondition(s)<a class="headerlink" href="#preconditions" title="Permanent link">&para;</a></h2>
-<p>Sample is in System</p>
+<p>Songs' data are in System</p>
 <h2 id="postconditions">Postcondition(s)<a class="headerlink" href="#postconditions" title="Permanent link">&para;</a></h2>
-<p>Sample is not in System</p>
+<p>Songs' data are in System and chronological.mk3 is in the working directory</p>
 <h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
-<p>1) Radio host enters the command:</p>
-<div class="codehilite"><pre><span></span>dmr remove sample &lt;sampleFile&gt;
+<p>1) Radio Host enters the following command:</p>
+<div class="codehilite"><pre><span></span>dmr generate playlist -o &lt;playlistFileName&gt;
 </pre></div>
 
 
-<p>2) System removes the sample locally and in remote repository.</p>
+<p>2) System generates a chronological playlist of songs and places it in a file at <code>&lt;playlistFileName&gt;</code>.</p>
 <h2 id="alternate">Alternate<a class="headerlink" href="#alternate" title="Permanent link">&para;</a></h2>
-<p>2) System cannot connect to remote repository.</p>
-<p>3) System displays <code>Cannot connect to remote repository.</code></p>
-<hr />
-<p>2) System cannot find file specified.</p>
-<p>3) System displays <code>Cannot find the specified audio file.</code></p>
+<p>N/A</p>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<p><a href="../../features/#f8-sample-tracking">F8: Sample Tracking</a></p>
-<p><a href="../../features/#f10-remove-sample-via-command-line">F10: Remove Sample via Command Line</a></p>
+<p><a href="../../features/#f11-chronological-playlist">F11: Chronological Playlist</a></p>
                 
                   
                 
@@ -716,7 +711,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../u9/" title="U9: Add Sample via Command Line (without Command Line Arguments)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../u11/" title="U11: Remove Sample via Command Line (without Command Line Arguments)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -725,25 +720,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                U9: Add Sample via Command Line (without Command Line Arguments)
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../u11/" title="U11: Remove Sample via Command Line (without Command Line Arguments)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 U11: Remove Sample via Command Line (without Command Line Arguments)
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
