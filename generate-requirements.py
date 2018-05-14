@@ -1,11 +1,13 @@
 import sqlite3
 from typing import List
 import logging
+from pathlib import PurePath
 
 DB_FILE = "requirements.db"
 NEEDS_FILE = "docs/requirements/needs.md"
 FEATURES_FILE = "docs/requirements/features.md"
-USE_CASES_FILE = "docs/requirements/use-cases.md"
+USE_CASES_DIRECTORY = "docs/requirements/use-cases"
+PAGES_FILE = "docs/requirements/use-cases/.pages"
 
 #### Needs
 
@@ -134,37 +136,39 @@ def getSlugForFeature(feature: sqlite3) -> str:
 
 def getMarkdownForUseCase(useCase: sqlite3.Row, connection: sqlite3.Connection) -> str:
     markdown = []
-    markdown.append("### U{0}: {1}\n".format(useCase['id'], useCase['shortName']))
-    markdown.append("**Description:**\n\n{0}\n".format(useCase['description']))
-    markdown.append("**Actor(s):** {0}\n".format(useCase['actors']))
-    markdown.append("**Preconditions:** {0}\n".format(useCase['preconditions']))
-    markdown.append("**Postconditions:** {0}\n".format(useCase['postconditions']))
-    markdown.append("**Steps:**\n\n{0}\n".format(useCase['steps']))
-    markdown.append("**Alternate:**\n\n{0}\n".format(useCase['alternate']))
+    markdown.append("# U{0}: {1}\n".format(useCase['id'], useCase['shortName']))
+    markdown.append("## Description\n\n{0}\n".format(useCase['description']))
+    markdown.append("## Actor(s)\n {0}\n".format(useCase['actors']))
+    markdown.append("## Preconditions\n {0}\n".format(useCase['preconditions']))
+    markdown.append("## Postconditions\n {0}\n".format(useCase['postconditions']))
+    markdown.append("## Steps\n\n{0}\n".format(useCase['steps']))
+    markdown.append("## Alternate\n\n{0}\n".format(useCase['alternate']))
     associatedFeatures = []
     for associatedFeature in getAssociatedFeatures(useCase, connection):
         slug = getSlugForFeature(associatedFeature)
-        associatedFeatures.append("[F{0}](features/#{1})".format(associatedFeature['id'], slug))
-    markdown.append("**Features: **"+" ".join(associatedFeatures)+"\n")
+        associatedFeatures.append("[F{0}](../features/#{1})".format(associatedFeature['id'], slug))
+    markdown.append("## Features\n"+" ".join(associatedFeatures)+"\n")
     return '\n'.join(markdown)
 
-def getMarkdownForUseCasesFile(connection: sqlite3.Connection) -> str:
-    markdown = []
-    markdown.append("# Use Cases")
+def writeUseCasesFiles(useCasesDirectory: str, pagesFile, connection: sqlite3.Connection):
     useCases = getAllUseCases(connection)
     for useCase in useCases:
-        markdown.append("{0}\n".format(getMarkdownForUseCase(useCase, connection)))
-    return '\n'.join(markdown)
+        filepath = PurePath(useCasesDirectory, "u{0}.md".format(useCase['id']))
+        useCaseFile = open(filepath, "w")
+        logging.info("Writing Use Case file at %s", filepath)
+        useCaseFile.write(getMarkdownForUseCase(useCase, connection))
+        pagesFile.write("- u{0}.md\n".format(useCase['id']))
+        useCaseFile.close()
 
-def writeUseCasesFile(useCasesFileName: str, connection: sqlite3.Connection):
-    useCasesFile = open(useCasesFileName, "w")
-    logging.info("Writing Use Cases file at %s", useCasesFileName)
-    useCasesFile.write(getMarkdownForUseCasesFile(connection))
-    useCasesFile.close()
+def initializePagesFile(pagesFileName: str):
+    pagesFile = open(pagesFileName, "w")
+    pagesFile.write("title: Use Cases\n")
+    pagesFile.write("arrange:\n")
+    return pagesFile
 
 connection = sqlite3.connect(DB_FILE)
 connection.row_factory = sqlite3.Row
 logging.basicConfig(level=logging.INFO)
 writeNeedsFile(NEEDS_FILE, connection)
 writeFeaturesFile(FEATURES_FILE, connection)
-writeUseCasesFile(USE_CASES_FILE, connection)
+writeUseCasesFiles(USE_CASES_DIRECTORY, initializePagesFile(PAGES_FILE), connection)
