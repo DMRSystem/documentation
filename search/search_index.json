@@ -249,6 +249,96 @@
             "location": "/requirements/use-cases/u2/#features",
             "text": "F1",
             "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u3/",
+            "text": "U3: Remove Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPreconditions\n\u00b6\n\n\nSong is in System\n\n\nPostconditions\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song <songFile>\n\n\n\n\n\n2) System removes the song locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6",
+            "title": "U3: Remove Song via Command Line (with Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#u3-remove-song-via-command-line-with-command-line-arguments",
+            "text": "",
+            "title": "U3: Remove Song via Command Line (with Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#description",
+            "text": "Radio Host adds a song to the system using the CLI and command line arguments.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#preconditions",
+            "text": "Song is in System",
+            "title": "Preconditions"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#postconditions",
+            "text": "Song is not in System",
+            "title": "Postconditions"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#steps",
+            "text": "1) Radio host enters the command:  dmr remove song <songFile>  2) System removes the song locally and in remote repository.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#alternate",
+            "text": "2) System cannot connect to remote repository.  3) System displays  Cannot connect to remote repository.   2) System cannot find file specified.  3) System displays  Cannot find the specified audio file.",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u3/#features",
+            "text": "",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u4/",
+            "text": "U4: Remove Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPreconditions\n\u00b6\n\n\nSong is in System\n\n\nPostconditions\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System removes the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nFeatures\n\u00b6",
+            "title": "U4: Remove Song via Command Line (without Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#u4-remove-song-via-command-line-without-command-line-arguments",
+            "text": "",
+            "title": "U4: Remove Song via Command Line (without Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#description",
+            "text": "Radio Host adds a song to the system using the CLI, but without command line arguments.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#preconditions",
+            "text": "Song is in System",
+            "title": "Preconditions"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#postconditions",
+            "text": "Song is not in System",
+            "title": "Postconditions"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#steps",
+            "text": "1) Radio host enters the command:  dmr remove song  2) System prompts user for the song file.  3) User inputs the song filename/filepath.  4) System removes the song locally and in the remote repository.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#alternate",
+            "text": "3) User inputs empty filename.  4) System displays \"Cannot add file with no file name.\"  5) System exits gracefully.   3) User inputs nonexistent file.  4) System displays \"Cannot find specified file.\"  5) System exits gracefully.",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u4/#features",
+            "text": "",
+            "title": "Features"
         }
     ]
 }
