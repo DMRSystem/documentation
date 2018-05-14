@@ -31,4 +31,20 @@
         
     
 
+    
+        
+    <url>
+     <loc>https://github.com/DMRSystem/design/</loc>
+     <lastmod>2018-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/DMRSystem/design/cli/</loc>
+     <lastmod>2018-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>

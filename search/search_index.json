@@ -749,6 +749,31 @@
             "location": "/requirements/use-cases/u13/#features",
             "text": "F12: System Setup",
             "title": "Features"
+        },
+        {
+            "location": "/design/",
+            "text": "Overview\n\u00b6\n\n\nThe DMR System is made of several components:\n\n\n\n\nCommand Line Interface: dmr-cli",
+            "title": "Overview"
+        },
+        {
+            "location": "/design/#overview",
+            "text": "The DMR System is made of several components:   Command Line Interface: dmr-cli",
+            "title": "Overview"
+        },
+        {
+            "location": "/design/cli/",
+            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick",
+            "title": "CLI"
+        },
+        {
+            "location": "/design/cli/#cli",
+            "text": "",
+            "title": "CLI"
+        },
+        {
+            "location": "/design/cli/#technologies",
+            "text": "click",
+            "title": "Technologies"
         }
     ]
 }
