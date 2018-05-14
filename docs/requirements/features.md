@@ -6,13 +6,31 @@
 
 User can add a song to the library via the command line.
 
+[U1: Add Song via Command Line (with Command Line Arguments)](use-cases/u1)
+
+[U2: Add Song via Command Line (without Command Line Arguments)](use-cases/u2)
+
 ### F2: Remove Song via Command Line
 
 User can remove a song from the library via the command line.
 
+[U3: Remove Song via Command Line (with Command Line Arguments)](use-cases/u3)
+
+[U4: Remove Song via Command Line (without Command Line Arguments)](use-cases/u4)
+
 ### F3: Modifying Song information via the Command Line
 
 User can modify song information via the command line.
+
+[U5: Modify Song via Command Line (with Command Line Arguments)](use-cases/u5)
+
+[U6: Modify Song via Command Line (without Command Line Arguments)](use-cases/u6)
+
+### F4: List Songs via Command Line
+
+User can list all songs in the library via the command line.
+
+[U7: List Songs via the Command Line](use-cases/u7)
 
 ### F9: Add Sample via Command Line
 
@@ -23,10 +41,6 @@ User can add a sample to the library via the command line.
 User can remove a sample from the library via the command line.
 
 ## [Tracking Custom Information](needs/#n2-tracking-custom-information)
-
-### F4: Number of Plays
-
-System automatically tracks number of plays for each song.
 
 ### F5: Track Date Added
 
@@ -39,6 +53,10 @@ User can modify popularity/rating for each song.
 ### F7: Number of Requests
 
 System tracks number of times each song has been requested.
+
+### F14: Number of Plays
+
+System automatically tracks number of plays for each song.
 
 ## [Songs vs. Samples](needs/#n3-songs-vs-samples)
 

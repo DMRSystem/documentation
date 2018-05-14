@@ -21,10 +21,14 @@ def getNeedsForCategory(category: sqlite3.Row, connection: sqlite3.Connection) -
     needs.execute('SELECT * FROM Need WHERE category=?', str(category['id']))
     return needs.fetchall()
 
-def getMarkdownForNeed(need: sqlite3.Row) -> str:
+def getMarkdownForNeed(need: sqlite3.Row, connection: sqlite3.Connection) -> str:
     markdown = []
     markdown.append("### N{0}: {1}\n".format(need['id'], need['shortName']))
     markdown.append("{0}\n".format(need['description']))
+    features = getFeaturesForCategory(need, connection)
+    for feature in features:
+        slug = getSlugForFeature(feature)
+        markdown.append("[F{0}: {1}](features/#{2})\n".format(feature['id'], feature['shortName'], slug))
     return '\n'.join(markdown)
 
 def getMarkdownForNeedCategory(category: sqlite3.Row, connection: sqlite3.Connection) -> str:
@@ -32,7 +36,7 @@ def getMarkdownForNeedCategory(category: sqlite3.Row, connection: sqlite3.Connec
     markdown.append("## {0}\n".format(category['name']))
     needs = getNeedsForCategory(category, connection)
     for need in needs:
-        markdown.append(getMarkdownForNeed(need))
+        markdown.append(getMarkdownForNeed(need, connection))
     return '\n'.join(markdown)
 
 def getMarkdownForNeedsFile(connection: sqlite3.Connection) -> str:
@@ -61,10 +65,13 @@ def getFeaturesForCategory(category: sqlite3.Row, connection: sqlite3.Connection
     features.execute("SELECT * FROM Feature WHERE need=?", str(category['id']))
     return features.fetchall()
 
-def getMarkdownForFeature(feature: sqlite3.Row) -> str:
+def getMarkdownForFeature(feature: sqlite3.Row, connection: sqlite3.Connection) -> str:
     markdown = []
     markdown.append("### F{0}: {1}\n".format(feature['id'], feature['shortName']))
     markdown.append("{0}\n".format(feature['description']))
+    useCases = getUseCasesForCategory(feature, connection)
+    for useCase in useCases:
+        markdown.append("[U{0}: {1}](use-cases/u{0})\n".format(useCase['id'], useCase['shortName']))
     return '\n'.join(markdown)
 
 def removePeriods(parts: List[str]) -> List[str]:
@@ -87,7 +94,7 @@ def getMarkdownForFeatureCategory(category: sqlite3.Row, connection: sqlite3.Con
     markdown.append("## [{0}](needs/#{1})\n".format(category['shortName'], slug))
     features = getFeaturesForCategory(category, connection)
     for feature in features:
-        markdown.append(getMarkdownForFeature(feature))
+        markdown.append(getMarkdownForFeature(feature, connection))
     return '\n'.join(markdown)
 
 def getMarkdownForFeaturesFile(connection: sqlite3.Connection) -> str:
@@ -111,10 +118,10 @@ def writeFeaturesFile(featuresFileName: str, connection: sqlite3.Connection):
 #     useCaseCategories.execute("SELECT * FROM Feature")
 #     return useCaseCategories.fetchall()
 
-# def getUseCasesForCategory(category: sqlite3.Row, connection: sqlite3.Connection) -> List[sqlite3.Row]:
-#     useCases = connection.cursor()
-#     useCases.execute("SELECT * FROM UseCaseFeature, UseCase WHERE UseCaseFeature.feature=? AND UseCaseFeature.useCase = UseCase.id", str(category['id']))
-#     return useCases.fetchall()
+def getUseCasesForCategory(category: sqlite3.Row, connection: sqlite3.Connection) -> List[sqlite3.Row]:
+    useCases = connection.cursor()
+    useCases.execute("SELECT * FROM UseCaseFeature, UseCase WHERE UseCaseFeature.useCase = UseCase.id AND UseCaseFeature.feature = ?", (category['id'],))
+    return useCases.fetchall()
 
 def getAllUseCases(connection: sqlite3.Connection) -> List[sqlite3.Row]:
     useCases = connection.cursor()
@@ -139,14 +146,14 @@ def getMarkdownForUseCase(useCase: sqlite3.Row, connection: sqlite3.Connection) 
     markdown.append("# U{0}: {1}\n".format(useCase['id'], useCase['shortName']))
     markdown.append("## Description\n\n{0}\n".format(useCase['description']))
     markdown.append("## Actor(s)\n {0}\n".format(useCase['actors']))
-    markdown.append("## Preconditions\n {0}\n".format(useCase['preconditions']))
-    markdown.append("## Postconditions\n {0}\n".format(useCase['postconditions']))
+    markdown.append("## Precondition(s)\n {0}\n".format(useCase['preconditions']))
+    markdown.append("## Postcondition(s)\n {0}\n".format(useCase['postconditions']))
     markdown.append("## Steps\n\n{0}\n".format(useCase['steps']))
     markdown.append("## Alternate\n\n{0}\n".format(useCase['alternate']))
     associatedFeatures = []
     for associatedFeature in getAssociatedFeatures(useCase, connection):
         slug = getSlugForFeature(associatedFeature)
-        associatedFeatures.append("[F{0}](../features/#{1})".format(associatedFeature['id'], slug))
+        associatedFeatures.append("[F{0}: {2}](../features/#{1})\n".format(associatedFeature['id'], slug, associatedFeature['shortName']))
     markdown.append("## Features\n"+" ".join(associatedFeatures)+"\n")
     return '\n'.join(markdown)
 
