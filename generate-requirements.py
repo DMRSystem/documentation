@@ -120,7 +120,7 @@ def writeFeaturesFile(featuresFileName: str, connection: sqlite3.Connection):
 
 def getUseCasesForCategory(category: sqlite3.Row, connection: sqlite3.Connection) -> List[sqlite3.Row]:
     useCases = connection.cursor()
-    useCases.execute("SELECT * FROM UseCaseFeature, UseCase WHERE UseCaseFeature.useCase = UseCase.id AND UseCaseFeature.feature = ?", (category['id'],))
+    useCases.execute("SELECT * FROM UseCaseFeature, UseCase WHERE UseCaseFeature.useCase = UseCase.id AND UseCaseFeature.feature = ? ORDER BY UseCase.id ASC", (category['id'],))
     return useCases.fetchall()
 
 def getAllUseCases(connection: sqlite3.Connection) -> List[sqlite3.Row]:
@@ -130,7 +130,7 @@ def getAllUseCases(connection: sqlite3.Connection) -> List[sqlite3.Row]:
 
 def getAssociatedFeatures(useCase: sqlite3.Row, connection: sqlite3.Connection) -> List[sqlite3.Row]:
     features = connection.cursor()
-    features.execute("SELECT * FROM Feature, UseCaseFeature WHERE Feature.id = UseCaseFeature.feature AND UseCaseFeature.useCase=?", str(useCase['id']))
+    features.execute("SELECT * FROM Feature, UseCaseFeature WHERE Feature.id = UseCaseFeature.feature AND UseCaseFeature.useCase=? ORDER BY Feature.id ASC", (useCase['id'],))
     return features.fetchall()
 
 def getSlugForFeature(feature: sqlite3) -> str:
@@ -154,7 +154,7 @@ def getMarkdownForUseCase(useCase: sqlite3.Row, connection: sqlite3.Connection) 
     for associatedFeature in getAssociatedFeatures(useCase, connection):
         slug = getSlugForFeature(associatedFeature)
         associatedFeatures.append("[F{0}: {2}](../features/#{1})\n".format(associatedFeature['id'], slug, associatedFeature['shortName']))
-    markdown.append("## Features\n"+" ".join(associatedFeatures)+"\n")
+    markdown.append("## Features\n"+"\n".join(associatedFeatures)+"\n")
     return '\n'.join(markdown)
 
 def writeUseCasesFiles(useCasesDirectory: str, pagesFile, connection: sqlite3.Connection):

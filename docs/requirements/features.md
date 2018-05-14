@@ -36,15 +36,27 @@ User can list all songs in the library via the command line.
 
 User can add a sample to the library via the command line.
 
+[U8: Add Sample via Command Line (with Command Line Arguments)](use-cases/u8)
+
+[U9: Add Sample via Command Line (without Command Line Arguments)](use-cases/u9)
+
 ### F10: Remove Sample via Command Line
 
 User can remove a sample from the library via the command line.
+
+[U10: Remove Sample via Command Line (with Command Line Arguments)](use-cases/u10)
+
+[U11: Remove Sample via Command Line (without Command Line Arguments)](use-cases/u11)
 
 ## [Tracking Custom Information](needs/#n2-tracking-custom-information)
 
 ### F5: Track Date Added
 
 System automatially tracks date added for each song.
+
+[U1: Add Song via Command Line (with Command Line Arguments)](use-cases/u1)
+
+[U2: Add Song via Command Line (without Command Line Arguments)](use-cases/u2)
 
 ### F6: Popularity
 
@@ -64,6 +76,14 @@ System automatically tracks number of plays for each song.
 
 System tracks samples separately from songs.
 
+[U8: Add Sample via Command Line (with Command Line Arguments)](use-cases/u8)
+
+[U9: Add Sample via Command Line (without Command Line Arguments)](use-cases/u9)
+
+[U10: Remove Sample via Command Line (with Command Line Arguments)](use-cases/u10)
+
+[U11: Remove Sample via Command Line (without Command Line Arguments)](use-cases/u11)
+
 ### F13: Switch between Song and Sample
 
 Once the user has added a Song to the library, the user can convert the song to a sample and vice versa.
@@ -74,8 +94,12 @@ Once the user has added a Song to the library, the user can convert the song to 
 
 User can generate a chronological playlist via the command line.
 
+[U12: Generate Chronological Playlist (with Command Line Arguments)](use-cases/u12)
+
 ## [Setup from Scratch](needs/#n5-setup-from-scratch)
 
 ### F12: System Setup
 
 User can issue a single command via the command line to set up the entire system.
+
+[U13: Set up system via Command Line](use-cases/u13)
