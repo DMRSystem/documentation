@@ -62,7 +62,7 @@
         },
         {
             "location": "/requirements/features/",
-            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nU3: Remove Song via Command Line (with Command Line Arguments)\n\n\nU4: Remove Song via Command Line (without Command Line Arguments)\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nU5: Modify Song via Command Line (with Command Line Arguments)\n\n\nU6: Modify Song via Command Line (without Command Line Arguments)\n\n\nF4: List Songs via Command Line\n\u00b6\n\n\nUser can list all songs in the library via the command line.\n\n\nU7: List Songs via the Command Line\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nTracking Custom Information\n\u00b6\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nF14: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nF13: Switch between Song and Sample\n\u00b6\n\n\nOnce the user has added a Song to the library, the user can convert the song to a sample and vice versa.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist via the command line.\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.",
+            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nU3: Remove Song via Command Line (with Command Line Arguments)\n\n\nU4: Remove Song via Command Line (without Command Line Arguments)\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nU5: Modify Song via Command Line (with Command Line Arguments)\n\n\nU6: Modify Song via Command Line (without Command Line Arguments)\n\n\nF4: List Songs via Command Line\n\u00b6\n\n\nUser can list all songs in the library via the command line.\n\n\nU7: List Songs via the Command Line\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nTracking Custom Information\n\u00b6\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nF14: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF13: Switch between Song and Sample\n\u00b6\n\n\nOnce the user has added a Song to the library, the user can convert the song to a sample and vice versa.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist via the command line.\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.",
             "title": "Features"
         },
         {
@@ -97,12 +97,12 @@
         },
         {
             "location": "/requirements/features/#f9-add-sample-via-command-line",
-            "text": "User can add a sample to the library via the command line.",
+            "text": "User can add a sample to the library via the command line.  U8: Add Sample via Command Line (with Command Line Arguments)  U9: Add Sample via Command Line (without Command Line Arguments)",
             "title": "F9: Add Sample via Command Line"
         },
         {
             "location": "/requirements/features/#f10-remove-sample-via-command-line",
-            "text": "User can remove a sample from the library via the command line.",
+            "text": "User can remove a sample from the library via the command line.  U10: Remove Sample via Command Line (with Command Line Arguments)  U11: Remove Sample via Command Line (without Command Line Arguments)",
             "title": "F10: Remove Sample via Command Line"
         },
         {
@@ -112,7 +112,7 @@
         },
         {
             "location": "/requirements/features/#f5-track-date-added",
-            "text": "System automatially tracks date added for each song.",
+            "text": "System automatially tracks date added for each song.  U1: Add Song via Command Line (with Command Line Arguments)  U2: Add Song via Command Line (without Command Line Arguments)",
             "title": "F5: Track Date Added"
         },
         {
@@ -137,7 +137,7 @@
         },
         {
             "location": "/requirements/features/#f8-sample-tracking",
-            "text": "System tracks samples separately from songs.",
+            "text": "System tracks samples separately from songs.  U8: Add Sample via Command Line (with Command Line Arguments)  U9: Add Sample via Command Line (without Command Line Arguments)  U10: Remove Sample via Command Line (with Command Line Arguments)  U11: Remove Sample via Command Line (without Command Line Arguments)",
             "title": "F8: Sample Tracking"
         },
         {
@@ -167,7 +167,7 @@
         },
         {
             "location": "/requirements/use-cases/u1/",
-            "text": "U1: Add Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr add song <songFile> --name\n=\n<songName> --artist\n=\n<songArtist> --year\n=\n<songYear>\n\n\n\n\n\n2) System records the song locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF1: Add Song via Command Line",
+            "text": "U1: Add Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr add song <songFile> --name\n=\n<songName> --artist\n=\n<songArtist> --year\n=\n<songYear>\n\n\n\n\n\n2) System records the song locally and in remote repository, and also tracks the date added.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF1: Add Song via Command Line\n\n\nF5: Track Date Added",
             "title": "U1: Add Song via Command Line (with Command Line Arguments)"
         },
         {
@@ -197,7 +197,7 @@
         },
         {
             "location": "/requirements/use-cases/u1/#steps",
-            "text": "1) Radio host enters the command:  dmr add song <songFile> --name = <songName> --artist = <songArtist> --year = <songYear>  2) System records the song locally and in remote repository.",
+            "text": "1) Radio host enters the command:  dmr add song <songFile> --name = <songName> --artist = <songArtist> --year = <songYear>  2) System records the song locally and in remote repository, and also tracks the date added.",
             "title": "Steps"
         },
         {
@@ -207,12 +207,12 @@
         },
         {
             "location": "/requirements/use-cases/u1/#features",
-            "text": "F1: Add Song via Command Line",
+            "text": "F1: Add Song via Command Line  F5: Track Date Added",
             "title": "Features"
         },
         {
             "location": "/requirements/use-cases/u2/",
-            "text": "U2: Add Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr add song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System prompts user for the song title.\n\n\n5) User inputs the song title.\n\n\n6) System prompts the user for the song artist.\n\n\n7) User inputs the song artist.\n\n\n8) System prompts user for the song year.\n\n\n9) User inputs the song year.\n\n\n10) System records the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nAt any other point, if the user enters an empty value, the system enters the default value (empty string).\n\n\nFeatures\n\u00b6\n\n\nF1: Add Song via Command Line",
+            "text": "U2: Add Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr add song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System prompts user for the song title.\n\n\n5) User inputs the song title.\n\n\n6) System prompts the user for the song artist.\n\n\n7) User inputs the song artist.\n\n\n8) System prompts user for the song year.\n\n\n9) User inputs the song year.\n\n\n10) System records the song locally and in the remote repository and also tracks the date added.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nAt any other point, if the user enters an empty value, the system enters the default value (empty string).\n\n\nFeatures\n\u00b6\n\n\nF1: Add Song via Command Line\n\n\nF5: Track Date Added",
             "title": "U2: Add Song via Command Line (without Command Line Arguments)"
         },
         {
@@ -242,7 +242,7 @@
         },
         {
             "location": "/requirements/use-cases/u2/#steps",
-            "text": "1) Radio host enters the command:  dmr add song  2) System prompts user for the song file.  3) User inputs the song filename/filepath.  4) System prompts user for the song title.  5) User inputs the song title.  6) System prompts the user for the song artist.  7) User inputs the song artist.  8) System prompts user for the song year.  9) User inputs the song year.  10) System records the song locally and in the remote repository.",
+            "text": "1) Radio host enters the command:  dmr add song  2) System prompts user for the song file.  3) User inputs the song filename/filepath.  4) System prompts user for the song title.  5) User inputs the song title.  6) System prompts the user for the song artist.  7) User inputs the song artist.  8) System prompts user for the song year.  9) User inputs the song year.  10) System records the song locally and in the remote repository and also tracks the date added.",
             "title": "Steps"
         },
         {
@@ -252,12 +252,12 @@
         },
         {
             "location": "/requirements/use-cases/u2/#features",
-            "text": "F1: Add Song via Command Line",
+            "text": "F1: Add Song via Command Line  F5: Track Date Added",
             "title": "Features"
         },
         {
             "location": "/requirements/use-cases/u3/",
-            "text": "U3: Remove Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song <songFile>\n\n\n\n\n\n2) System removes the song locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF2: Remove Song via Command Line",
+            "text": "U3: Remove Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host removes a song from the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song <songFile>\n\n\n\n\n\n2) System removes the song locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF2: Remove Song via Command Line",
             "title": "U3: Remove Song via Command Line (with Command Line Arguments)"
         },
         {
@@ -267,7 +267,7 @@
         },
         {
             "location": "/requirements/use-cases/u3/#description",
-            "text": "Radio Host adds a song to the system using the CLI and command line arguments.",
+            "text": "Radio Host removes a song from the system using the CLI and command line arguments.",
             "title": "Description"
         },
         {
@@ -302,7 +302,7 @@
         },
         {
             "location": "/requirements/use-cases/u4/",
-            "text": "U4: Remove Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System removes the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nFeatures\n\u00b6\n\n\nF2: Remove Song via Command Line",
+            "text": "U4: Remove Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host removes a song from the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System removes the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nFeatures\n\u00b6\n\n\nF2: Remove Song via Command Line",
             "title": "U4: Remove Song via Command Line (without Command Line Arguments)"
         },
         {
@@ -312,7 +312,7 @@
         },
         {
             "location": "/requirements/use-cases/u4/#description",
-            "text": "Radio Host adds a song to the system using the CLI, but without command line arguments.",
+            "text": "Radio Host removes a song from the system using the CLI, but without command line arguments.",
             "title": "Description"
         },
         {
@@ -478,6 +478,186 @@
         {
             "location": "/requirements/use-cases/u7/#features",
             "text": "F4: List Songs via Command Line",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u8/",
+            "text": "U8: Add Sample via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a sample to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSample is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSample is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr add sample <sampleFile> --name\n=\n<songName>\n\n\n\n\n\n2) System records the sample locally and in remote repository, and also tracks the date added.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF9: Add Sample via Command Line\n\n\nF8: Sample Tracking",
+            "title": "U8: Add Sample via Command Line (with Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#u8-add-sample-via-command-line-with-command-line-arguments",
+            "text": "",
+            "title": "U8: Add Sample via Command Line (with Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#description",
+            "text": "Radio Host adds a sample to the system using the CLI and command line arguments.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#preconditions",
+            "text": "Sample is not in System",
+            "title": "Precondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#postconditions",
+            "text": "Sample is in System",
+            "title": "Postcondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#steps",
+            "text": "1) Radio host enters the command:  dmr add sample <sampleFile> --name = <songName>  2) System records the sample locally and in remote repository, and also tracks the date added.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#alternate",
+            "text": "2) System cannot connect to remote repository.  3) System displays  Cannot connect to remote repository.   2) System cannot find file specified.  3) System displays  Cannot find the specified audio file.",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u8/#features",
+            "text": "F9: Add Sample via Command Line  F8: Sample Tracking",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u9/",
+            "text": "U9: Add Sample via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a sample to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSample is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSample is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr add sample\n\n\n\n\n\n2) System prompts user for the sample file.\n\n\n3) User inputs the sample filename/filepath.\n\n\n4) System prompts user for the sample title.\n\n\n5) User inputs the sample title.\n\n\n6) System records the sample locally and in the remote repository, and also tracks the date added.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nAt any other point, if the user enters an empty value, the system enters the default value (empty string).\n\n\nFeatures\n\u00b6\n\n\nF9: Add Sample via Command Line\n\n\nF8: Sample Tracking",
+            "title": "U9: Add Sample via Command Line (without Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#u9-add-sample-via-command-line-without-command-line-arguments",
+            "text": "",
+            "title": "U9: Add Sample via Command Line (without Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#description",
+            "text": "Radio Host adds a sample to the system using the CLI, but without command line arguments.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#preconditions",
+            "text": "Sample is not in System",
+            "title": "Precondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#postconditions",
+            "text": "Sample is in System",
+            "title": "Postcondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#steps",
+            "text": "1) Radio host enters the command:  dmr add sample  2) System prompts user for the sample file.  3) User inputs the sample filename/filepath.  4) System prompts user for the sample title.  5) User inputs the sample title.  6) System records the sample locally and in the remote repository, and also tracks the date added.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#alternate",
+            "text": "3) User inputs empty filename.  4) System displays \"Cannot add file with no file name.\"  5) System exits gracefully.   3) User inputs nonexistent file.  4) System displays \"Cannot find specified file.\"  5) System exits gracefully.  At any other point, if the user enters an empty value, the system enters the default value (empty string).",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u9/#features",
+            "text": "F9: Add Sample via Command Line  F8: Sample Tracking",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u10/",
+            "text": "U10: Remove Sample via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host removes a sample from the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSample is in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSample is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove sample <sampleFile>\n\n\n\n\n\n2) System removes the sample locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF8: Sample Tracking\n\n\nF10: Remove Sample via Command Line",
+            "title": "U10: Remove Sample via Command Line (with Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#u10-remove-sample-via-command-line-with-command-line-arguments",
+            "text": "",
+            "title": "U10: Remove Sample via Command Line (with Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#description",
+            "text": "Radio Host removes a sample from the system using the CLI and command line arguments.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#preconditions",
+            "text": "Sample is in System",
+            "title": "Precondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#postconditions",
+            "text": "Sample is not in System",
+            "title": "Postcondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#steps",
+            "text": "1) Radio host enters the command:  dmr remove sample <sampleFile>  2) System removes the sample locally and in remote repository.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#alternate",
+            "text": "2) System cannot connect to remote repository.  3) System displays  Cannot connect to remote repository.   2) System cannot find file specified.  3) System displays  Cannot find the specified audio file.",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u10/#features",
+            "text": "F8: Sample Tracking  F10: Remove Sample via Command Line",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u11/",
+            "text": "U11: Remove Sample via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host removes a sample to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSample is in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSample is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove sample\n\n\n\n\n\n2) System prompts user for the sample file.\n\n\n3) User inputs the sample filename/filepath.\n\n\n4) System removes the sample locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nFeatures\n\u00b6\n\n\nF8: Sample Tracking\n\n\nF10: Remove Sample via Command Line",
+            "title": "U11: Remove Sample via Command Line (without Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#u11-remove-sample-via-command-line-without-command-line-arguments",
+            "text": "",
+            "title": "U11: Remove Sample via Command Line (without Command Line Arguments)"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#description",
+            "text": "Radio Host removes a sample to the system using the CLI, but without command line arguments.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#preconditions",
+            "text": "Sample is in System",
+            "title": "Precondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#postconditions",
+            "text": "Sample is not in System",
+            "title": "Postcondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#steps",
+            "text": "1) Radio host enters the command:  dmr remove sample  2) System prompts user for the sample file.  3) User inputs the sample filename/filepath.  4) System removes the sample locally and in the remote repository.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#alternate",
+            "text": "3) User inputs empty filename.  4) System displays \"Cannot add file with no file name.\"  5) System exits gracefully.   3) User inputs nonexistent file.  4) System displays \"Cannot find specified file.\"  5) System exits gracefully.",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u11/#features",
+            "text": "F8: Sample Tracking  F10: Remove Sample via Command Line",
             "title": "Features"
         }
     ]
