@@ -5,6 +5,7 @@ import logging
 DB_FILE = "requirements.db"
 NEEDS_FILE = "docs/requirements/needs.md"
 FEATURES_FILE = "docs/requirements/features.md"
+USE_CASES_FILE = "docs/requirements/use-cases.md"
 
 #### Needs
 
@@ -101,9 +102,69 @@ def writeFeaturesFile(featuresFileName: str, connection: sqlite3.Connection):
     featuresFile.write(getMarkdownForFeaturesFile(connection))
     featuresFile.close
 
+#### Use Cases
+
+# def getUseCaseCategories(connection: sqlite3.Connection) -> List[sqlite3.Row]:
+#     useCaseCategories = connection.cursor()
+#     useCaseCategories.execute("SELECT * FROM Feature")
+#     return useCaseCategories.fetchall()
+
+# def getUseCasesForCategory(category: sqlite3.Row, connection: sqlite3.Connection) -> List[sqlite3.Row]:
+#     useCases = connection.cursor()
+#     useCases.execute("SELECT * FROM UseCaseFeature, UseCase WHERE UseCaseFeature.feature=? AND UseCaseFeature.useCase = UseCase.id", str(category['id']))
+#     return useCases.fetchall()
+
+def getAllUseCases(connection: sqlite3.Connection) -> List[sqlite3.Row]:
+    useCases = connection.cursor()
+    useCases.execute("SELECT * FROM UseCase")
+    return useCases.fetchall()
+
+def getAssociatedFeatures(useCase: sqlite3.Row, connection: sqlite3.Connection) -> List[sqlite3.Row]:
+    features = connection.cursor()
+    features.execute("SELECT * FROM Feature, UseCaseFeature WHERE Feature.id = UseCaseFeature.feature AND UseCaseFeature.useCase=?", str(useCase['id']))
+    return features.fetchall()
+
+def getSlugForFeature(feature: sqlite3) -> str:
+    parts = []
+    shortName: str = feature['shortName']
+    parts.append("F{0}".format(feature['id']))
+    parts.extend(shortName.split(" "))
+    parts = removePeriods(parts)
+    return ("-".join(parts)).lower()
+
+def getMarkdownForUseCase(useCase: sqlite3.Row, connection: sqlite3.Connection) -> str:
+    markdown = []
+    markdown.append("### U{0}: {1}\n".format(useCase['id'], useCase['shortName']))
+    markdown.append("**Description:**\n\n{0}\n".format(useCase['description']))
+    markdown.append("**Actor(s):** {0}\n".format(useCase['actors']))
+    markdown.append("**Preconditions:** {0}\n".format(useCase['preconditions']))
+    markdown.append("**Postconditions:** {0}\n".format(useCase['postconditions']))
+    markdown.append("**Steps:**\n\n{0}\n".format(useCase['steps']))
+    markdown.append("**Alternate:**\n\n{0}\n".format(useCase['alternate']))
+    associatedFeatures = []
+    for associatedFeature in getAssociatedFeatures(useCase, connection):
+        slug = getSlugForFeature(associatedFeature)
+        associatedFeatures.append("[F{0}](features/#{1})".format(associatedFeature['id'], slug))
+    markdown.append("**Features: **"+" ".join(associatedFeatures)+"\n")
+    return '\n'.join(markdown)
+
+def getMarkdownForUseCasesFile(connection: sqlite3.Connection) -> str:
+    markdown = []
+    markdown.append("# Use Cases")
+    useCases = getAllUseCases(connection)
+    for useCase in useCases:
+        markdown.append("{0}\n".format(getMarkdownForUseCase(useCase, connection)))
+    return '\n'.join(markdown)
+
+def writeUseCasesFile(useCasesFileName: str, connection: sqlite3.Connection):
+    useCasesFile = open(useCasesFileName, "w")
+    logging.info("Writing Use Cases file at %s", useCasesFileName)
+    useCasesFile.write(getMarkdownForUseCasesFile(connection))
+    useCasesFile.close()
 
 connection = sqlite3.connect(DB_FILE)
 connection.row_factory = sqlite3.Row
 logging.basicConfig(level=logging.INFO)
 writeNeedsFile(NEEDS_FILE, connection)
 writeFeaturesFile(FEATURES_FILE, connection)
+writeUseCasesFile(USE_CASES_FILE, connection)
