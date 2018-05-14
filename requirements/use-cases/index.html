@@ -342,9 +342,45 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Use Cases
+      </label>
+    
     <a href="./" title="Use Cases" class="md-nav__link md-nav__link--active">
       Use Cases
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#u1-add-song-via-command-line-with-command-line-arguments" title="U1: Add Song via Command Line (with Command Line Arguments)" class="md-nav__link">
+    U1: Add Song via Command Line (with Command Line Arguments)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u2-add-song-via-command-line-without-command-line-arguments" title="U2: Add Song via Command Line (without Command Line Arguments)" class="md-nav__link">
+    U2: Add Song via Command Line (without Command Line Arguments)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -371,6 +407,29 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#u1-add-song-via-command-line-with-command-line-arguments" title="U1: Add Song via Command Line (with Command Line Arguments)" class="md-nav__link">
+    U1: Add Song via Command Line (with Command Line Arguments)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u2-add-song-via-command-line-without-command-line-arguments" title="U2: Add Song via Command Line (without Command Line Arguments)" class="md-nav__link">
+    U2: Add Song via Command Line (without Command Line Arguments)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -385,6 +444,57 @@
                 
                 
                 <h1 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h1>
+<h3 id="u1-add-song-via-command-line-with-command-line-arguments">U1: Add Song via Command Line (with Command Line Arguments)<a class="headerlink" href="#u1-add-song-via-command-line-with-command-line-arguments" title="Permanent link">&para;</a></h3>
+<p><strong>Description:</strong></p>
+<p>Radio Host adds a song to the system using the CLI and command line arguments.</p>
+<p><strong>Actor(s):</strong> Radio Host</p>
+<p><strong>Preconditions:</strong> Song is not in System</p>
+<p><strong>Postconditions:</strong> Song is in System</p>
+<p><strong>Steps:</strong></p>
+<p>1) Radio host enters the command:</p>
+<div class="codehilite"><pre><span></span>dmr add song &lt;songFile&gt; --name<span class="o">=</span>&lt;songName&gt; --artist<span class="o">=</span>&lt;songArtist&gt; --year<span class="o">=</span>&lt;songYear&gt;
+</pre></div>
+
+
+<p>2) System records the song locally and in remote repository.</p>
+<p><strong>Alternate:</strong></p>
+<p>2) System cannot connect to remote repository.</p>
+<p>3) System displays <code>Cannot connect to remote repository.</code></p>
+<hr />
+<p>2) System cannot find file specified.</p>
+<p>3) System displays <code>Cannot find the specified audio file.</code></p>
+<p><strong>Features: </strong><a href="../features/#f1-add-song-via-command-line">F1</a></p>
+<h3 id="u2-add-song-via-command-line-without-command-line-arguments">U2: Add Song via Command Line (without Command Line Arguments)<a class="headerlink" href="#u2-add-song-via-command-line-without-command-line-arguments" title="Permanent link">&para;</a></h3>
+<p><strong>Description:</strong></p>
+<p>Radio Host adds a song to the system using the CLI, but without command line arguments.</p>
+<p><strong>Actor(s):</strong> Radio Host</p>
+<p><strong>Preconditions:</strong> Song is not in System</p>
+<p><strong>Postconditions:</strong> Song is in System</p>
+<p><strong>Steps:</strong></p>
+<p>1) Radio host enters the command:</p>
+<div class="codehilite"><pre><span></span>dmr add song
+</pre></div>
+
+
+<p>2) System prompts user for the song file.</p>
+<p>3) User inputs the song filename/filepath.</p>
+<p>4) System prompts user for the song title.</p>
+<p>5) User inputs the song title.</p>
+<p>6) System prompts the user for the song artist.</p>
+<p>7) User inputs the song artist.</p>
+<p>8) System prompts user for the song year.</p>
+<p>9) User inputs the song year.</p>
+<p>10) System records the song locally and in the remote repository.</p>
+<p><strong>Alternate:</strong></p>
+<p>3) User inputs empty filename.</p>
+<p>4) System displays "Cannot add file with no file name."</p>
+<p>5) System exits gracefully.</p>
+<hr />
+<p>3) User inputs nonexistent file.</p>
+<p>4) System displays "Cannot find specified file."</p>
+<p>5) System exits gracefully.</p>
+<p>At any other point, if the user enters an empty value, the system enters the default value (empty string).</p>
+<p><strong>Features: </strong><a href="../features/#f1-add-song-via-command-line">F1</a></p>
                 
                   
                 
