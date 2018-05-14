@@ -252,7 +252,7 @@
         },
         {
             "location": "/requirements/use-cases/u3/",
-            "text": "U3: Remove Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPreconditions\n\u00b6\n\n\nSong is in System\n\n\nPostconditions\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song <songFile>\n\n\n\n\n\n2) System removes the song locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6",
+            "text": "U3: Remove Song via Command Line (with Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI and command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPreconditions\n\u00b6\n\n\nSong is in System\n\n\nPostconditions\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song <songFile>\n\n\n\n\n\n2) System removes the song locally and in remote repository.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to remote repository.\n\n\n3) System displays \nCannot connect to remote repository.\n\n\n\n\n2) System cannot find file specified.\n\n\n3) System displays \nCannot find the specified audio file.\n\n\nFeatures\n\u00b6\n\n\nF2",
             "title": "U3: Remove Song via Command Line (with Command Line Arguments)"
         },
         {
@@ -292,12 +292,12 @@
         },
         {
             "location": "/requirements/use-cases/u3/#features",
-            "text": "",
+            "text": "F2",
             "title": "Features"
         },
         {
             "location": "/requirements/use-cases/u4/",
-            "text": "U4: Remove Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPreconditions\n\u00b6\n\n\nSong is in System\n\n\nPostconditions\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System removes the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nFeatures\n\u00b6",
+            "text": "U4: Remove Song via Command Line (without Command Line Arguments)\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system using the CLI, but without command line arguments.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPreconditions\n\u00b6\n\n\nSong is in System\n\n\nPostconditions\n\u00b6\n\n\nSong is not in System\n\n\nSteps\n\u00b6\n\n\n1) Radio host enters the command:\n\n\ndmr remove song\n\n\n\n\n\n2) System prompts user for the song file.\n\n\n3) User inputs the song filename/filepath.\n\n\n4) System removes the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\n3) User inputs empty filename.\n\n\n4) System displays \"Cannot add file with no file name.\"\n\n\n5) System exits gracefully.\n\n\n\n\n3) User inputs nonexistent file.\n\n\n4) System displays \"Cannot find specified file.\"\n\n\n5) System exits gracefully.\n\n\nFeatures\n\u00b6\n\n\nF2",
             "title": "U4: Remove Song via Command Line (without Command Line Arguments)"
         },
         {
@@ -337,7 +337,7 @@
         },
         {
             "location": "/requirements/use-cases/u4/#features",
-            "text": "",
+            "text": "F2",
             "title": "Features"
         }
     ]
