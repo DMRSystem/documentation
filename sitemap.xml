@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://github.com/DMRSystem/</loc>
-     <lastmod>2018-05-14</lastmod>
+     <lastmod>2018-05-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>https://github.com/DMRSystem/requirements/needs/</loc>
-     <lastmod>2018-05-14</lastmod>
+     <lastmod>2018-05-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/DMRSystem/requirements/features/</loc>
-     <lastmod>2018-05-14</lastmod>
+     <lastmod>2018-05-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,13 +35,19 @@
         
     <url>
      <loc>https://github.com/DMRSystem/design/</loc>
-     <lastmod>2018-05-14</lastmod>
+     <lastmod>2018-05-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/DMRSystem/design/cli/</loc>
-     <lastmod>2018-05-14</lastmod>
+     <lastmod>2018-05-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/DMRSystem/design/server/</loc>
+     <lastmod>2018-05-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

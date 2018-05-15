@@ -774,6 +774,16 @@
             "location": "/design/cli/#technologies",
             "text": "click",
             "title": "Technologies"
+        },
+        {
+            "location": "/design/server/",
+            "text": "Server\n\u00b6\n\n\n\n\nManages the MP3 library.\n\n\nReceives new songs from clients and adds to the library.\n\n\nRemoves songs from the library.\n\n\nModifies data about the songs in the library.\n\n\nServes the library - makes it available for download to the client.",
+            "title": "Server"
+        },
+        {
+            "location": "/design/server/#server",
+            "text": "Manages the MP3 library.  Receives new songs from clients and adds to the library.  Removes songs from the library.  Modifies data about the songs in the library.  Serves the library - makes it available for download to the client.",
+            "title": "Server"
         }
     ]
 }
