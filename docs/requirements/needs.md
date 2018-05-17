@@ -18,6 +18,8 @@ Currently there is not an easy way to manage the DMR library. Songs must be manu
 
 [F10: Remove Sample via Command Line](features/#f10-remove-sample-via-command-line)
 
+[F15: Add Song from YouTube URL](features/#f15-add-song-from-youtube-url)
+
 ### N2: Tracking Custom Information
 
 Currently there is no way to keep track of custom information for the songs in the library (such as date added, popularity, number of plays, etc.).
@@ -32,7 +34,7 @@ Currently there is no way to keep track of custom information for the songs in t
 
 ### N3: Songs vs. Samples
 
-There is no conceptual difference between a "song" and a "sound bite" or "sample" in the library. Any audio imported into the DMR library is imported as a song.
+There is no conceptual difference between a "song" and a "sound bite" or "sample" in the library. Any audio imported into the DMR library is currently imported as a song.
 
 [F8: Sample Tracking](features/#f8-sample-tracking)
 
@@ -53,3 +55,9 @@ Currently, there is no easy way to automatically generate playlists for Mixxx. T
 There is no easy way to set up the entire system from scratch on a new machine.
 
 [F12: System Setup](features/#f12-system-setup)
+
+## Security
+
+### N6: Secure Communications
+
+Currently, the library can only be accessed by FTP or HTTP, which is inherently insecure.

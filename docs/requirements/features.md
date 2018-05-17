@@ -48,6 +48,10 @@ User can remove a sample from the library via the command line.
 
 [U11: Remove Sample via Command Line (without Command Line Arguments)](use-cases/u11)
 
+### F15: Add Song from YouTube URL
+
+System downloads MP3 from YouTube and adds to library.
+
 ## [Tracking Custom Information](needs/#n2-tracking-custom-information)
 
 ### F5: Track Date Added
@@ -103,3 +107,5 @@ User can generate a chronological playlist (by year then name (alphabetical)) vi
 User can issue a single command via the command line to set up the entire system.
 
 [U13: Set up system via Command Line](use-cases/u13)
+
+## [Secure Communications](needs/#n6-secure-communications)
