@@ -847,13 +847,18 @@
         },
         {
             "location": "/design/server/",
-            "text": "Server\n\u00b6\n\n\nResponsibilities\n\u00b6\n\n\n\n\nManages the MP3 library.\n\n\nReceives new songs from clients and adds to the library.\n\n\nRemoves songs from the library.\n\n\nModifies data about the songs in the library.\n\n\nServes the library - makes it available for download to the client.\n\n\n\n\nDatabase Concept\n\u00b6",
+            "text": "Server\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nMongoDB\n for metadata\n\n\nCassandra\n for blob storage\n\n\nPython for DB Driver\n\n\nSolr\n or \nElasticsearch\n\n\n\n\nResponsibilities\n\u00b6\n\n\n\n\nManages the MP3 library.\n\n\nReceives new songs from clients and adds to the library.\n\n\nRemoves songs from the library.\n\n\nModifies data about the songs in the library.\n\n\nServes the library - makes it available for download to the client.\n\n\n\n\nDatabase Concept\n\u00b6",
             "title": "Server"
         },
         {
             "location": "/design/server/#server",
             "text": "",
             "title": "Server"
+        },
+        {
+            "location": "/design/server/#technologies",
+            "text": "MongoDB  for metadata  Cassandra  for blob storage  Python for DB Driver  Solr  or  Elasticsearch",
+            "title": "Technologies"
         },
         {
             "location": "/design/server/#responsibilities",
