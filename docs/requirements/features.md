@@ -92,7 +92,7 @@ Once the user has added a Song to the library, the user can convert the song to 
 
 ### F11: Chronological Playlist
 
-User can generate a chronological playlist via the command line.
+User can generate a chronological playlist (by year then name (alphabetical)) via the command line.
 
 [U12: Generate Chronological Playlist (with Command Line Arguments)](use-cases/u12)
 
