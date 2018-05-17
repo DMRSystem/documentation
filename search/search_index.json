@@ -12,7 +12,7 @@
         },
         {
             "location": "/requirements/needs/",
-            "text": "Needs\n\u00b6\n\n\nManaging the Library\n\u00b6\n\n\nN1: CRUD Operations on Library\n\u00b6\n\n\nCurrently there is not an easy way to manage the DMR library. Songs must be manually added and checked into the repository. Users must manually edit the MP3 tags for the file in order to update the information. Deleting involves manually deleting files and then resyncing the repository.\n\n\nF1: Add Song via Command Line\n\n\nF2: Remove Song via Command Line\n\n\nF3: Modifying Song information via the Command Line\n\n\nF4: List Songs via Command Line\n\n\nF9: Add Sample via Command Line\n\n\nF10: Remove Sample via Command Line\n\n\nN2: Tracking Custom Information\n\u00b6\n\n\nCurrently there is no way to keep track of custom information for the songs in the library (such as date added, popularity, number of plays, etc.).\n\n\nF5: Track Date Added\n\n\nF6: Popularity\n\n\nF7: Number of Requests\n\n\nF14: Number of Plays\n\n\nN3: Songs vs. Samples\n\u00b6\n\n\nThere is no conceptual difference between a \"song\" and a \"sound bite\" or \"sample\" in the library. Any audio imported into the DMR library is imported as a song.\n\n\nF8: Sample Tracking\n\n\nF13: Switch between Song and Sample\n\n\nIntegrating with Other Programs\n\u00b6\n\n\nN4: Generating Playlists\n\u00b6\n\n\nCurrently, there is no easy way to automatically generate playlists for Mixxx. To create a playlist, Users must import all songs into Mixxx, drag them individually into the playlist, and then export. Users can use programs like \nKid3\n, but the process is more difficult than it should be.\n\n\nF11: Chronological Playlist\n\n\nGeneral Ease of Use\n\u00b6\n\n\nN5: Setup from Scratch\n\u00b6\n\n\nThere is no easy way to set up the entire system from scratch on a new machine.\n\n\nF12: System Setup",
+            "text": "Needs\n\u00b6\n\n\nManaging the Library\n\u00b6\n\n\nN1: CRUD Operations on Library\n\u00b6\n\n\nCurrently there is not an easy way to manage the DMR library. Songs must be manually added and checked into the repository. Users must manually edit the MP3 tags for the file in order to update the information. Deleting involves manually deleting files and then resyncing the repository.\n\n\nF1: Add Song via Command Line\n\n\nF2: Remove Song via Command Line\n\n\nF3: Modifying Song information via the Command Line\n\n\nF4: List Songs via Command Line\n\n\nF9: Add Sample via Command Line\n\n\nF10: Remove Sample via Command Line\n\n\nF15: Add Song from YouTube URL\n\n\nN2: Tracking Custom Information\n\u00b6\n\n\nCurrently there is no way to keep track of custom information for the songs in the library (such as date added, popularity, number of plays, etc.).\n\n\nF5: Track Date Added\n\n\nF6: Popularity\n\n\nF7: Number of Requests\n\n\nF14: Number of Plays\n\n\nN3: Songs vs. Samples\n\u00b6\n\n\nThere is no conceptual difference between a \"song\" and a \"sound bite\" or \"sample\" in the library. Any audio imported into the DMR library is imported as a song.\n\n\nF8: Sample Tracking\n\n\nF13: Switch between Song and Sample\n\n\nIntegrating with Other Programs\n\u00b6\n\n\nN4: Generating Playlists\n\u00b6\n\n\nCurrently, there is no easy way to automatically generate playlists for Mixxx. To create a playlist, Users must import all songs into Mixxx, drag them individually into the playlist, and then export. Users can use programs like \nKid3\n, but the process is more difficult than it should be.\n\n\nF11: Chronological Playlist\n\n\nGeneral Ease of Use\n\u00b6\n\n\nN5: Setup from Scratch\n\u00b6\n\n\nThere is no easy way to set up the entire system from scratch on a new machine.\n\n\nF12: System Setup",
             "title": "Needs"
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "location": "/requirements/needs/#n1-crud-operations-on-library",
-            "text": "Currently there is not an easy way to manage the DMR library. Songs must be manually added and checked into the repository. Users must manually edit the MP3 tags for the file in order to update the information. Deleting involves manually deleting files and then resyncing the repository.  F1: Add Song via Command Line  F2: Remove Song via Command Line  F3: Modifying Song information via the Command Line  F4: List Songs via Command Line  F9: Add Sample via Command Line  F10: Remove Sample via Command Line",
+            "text": "Currently there is not an easy way to manage the DMR library. Songs must be manually added and checked into the repository. Users must manually edit the MP3 tags for the file in order to update the information. Deleting involves manually deleting files and then resyncing the repository.  F1: Add Song via Command Line  F2: Remove Song via Command Line  F3: Modifying Song information via the Command Line  F4: List Songs via Command Line  F9: Add Sample via Command Line  F10: Remove Sample via Command Line  F15: Add Song from YouTube URL",
             "title": "N1: CRUD Operations on Library"
         },
         {
@@ -62,7 +62,7 @@
         },
         {
             "location": "/requirements/features/",
-            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nU3: Remove Song via Command Line (with Command Line Arguments)\n\n\nU4: Remove Song via Command Line (without Command Line Arguments)\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nU5: Modify Song via Command Line (with Command Line Arguments)\n\n\nU6: Modify Song via Command Line (without Command Line Arguments)\n\n\nF4: List Songs via Command Line\n\u00b6\n\n\nUser can list all songs in the library via the command line.\n\n\nU7: List Songs via the Command Line\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nTracking Custom Information\n\u00b6\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nF14: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF13: Switch between Song and Sample\n\u00b6\n\n\nOnce the user has added a Song to the library, the user can convert the song to a sample and vice versa.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist via the command line.\n\n\nU12: Generate Chronological Playlist (with Command Line Arguments)\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.\n\n\nU13: Set up system via Command Line",
+            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nU3: Remove Song via Command Line (with Command Line Arguments)\n\n\nU4: Remove Song via Command Line (without Command Line Arguments)\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nU5: Modify Song via Command Line (with Command Line Arguments)\n\n\nU6: Modify Song via Command Line (without Command Line Arguments)\n\n\nF4: List Songs via Command Line\n\u00b6\n\n\nUser can list all songs in the library via the command line.\n\n\nU7: List Songs via the Command Line\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF15: Add Song from YouTube URL\n\u00b6\n\n\nSystem downloads MP3 from YouTube and adds to library.\n\n\nTracking Custom Information\n\u00b6\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nF14: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF13: Switch between Song and Sample\n\u00b6\n\n\nOnce the user has added a Song to the library, the user can convert the song to a sample and vice versa.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist (by year then name (alphabetical)) via the command line.\n\n\nU12: Generate Chronological Playlist (with Command Line Arguments)\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.\n\n\nU13: Set up system via Command Line",
             "title": "Features"
         },
         {
@@ -104,6 +104,11 @@
             "location": "/requirements/features/#f10-remove-sample-via-command-line",
             "text": "User can remove a sample from the library via the command line.  U10: Remove Sample via Command Line (with Command Line Arguments)  U11: Remove Sample via Command Line (without Command Line Arguments)",
             "title": "F10: Remove Sample via Command Line"
+        },
+        {
+            "location": "/requirements/features/#f15-add-song-from-youtube-url",
+            "text": "System downloads MP3 from YouTube and adds to library.",
+            "title": "F15: Add Song from YouTube URL"
         },
         {
             "location": "/requirements/features/#tracking-custom-information",
@@ -152,7 +157,7 @@
         },
         {
             "location": "/requirements/features/#f11-chronological-playlist",
-            "text": "User can generate a chronological playlist via the command line.  U12: Generate Chronological Playlist (with Command Line Arguments)",
+            "text": "User can generate a chronological playlist (by year then name (alphabetical)) via the command line.  U12: Generate Chronological Playlist (with Command Line Arguments)",
             "title": "F11: Chronological Playlist"
         },
         {
@@ -762,7 +767,7 @@
         },
         {
             "location": "/design/cli/",
-            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick",
+            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick\n with \nclick_shell\n\n\n\n\nResponsibilities\n\u00b6\n\n\n\n\nAllow users to Create, Remove, Update, Delete files in local and remote libraries.",
             "title": "CLI"
         },
         {
@@ -772,8 +777,13 @@
         },
         {
             "location": "/design/cli/#technologies",
-            "text": "click",
+            "text": "click  with  click_shell",
             "title": "Technologies"
+        },
+        {
+            "location": "/design/cli/#responsibilities",
+            "text": "Allow users to Create, Remove, Update, Delete files in local and remote libraries.",
+            "title": "Responsibilities"
         },
         {
             "location": "/design/server/",
