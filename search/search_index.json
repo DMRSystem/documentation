@@ -817,12 +817,12 @@
         },
         {
             "location": "/design/",
-            "text": "Overview\n\u00b6\n\n\nThe DMR System is made of several components:\n\n\n\n\nCommand Line Interface: dmr-cli",
+            "text": "Overview\n\u00b6\n\n\nThe DMR System is made of several components:\n\n\n\n\nCommand Line Interface: dmr-cli\n\n\nServer and Database",
             "title": "Overview"
         },
         {
             "location": "/design/#overview",
-            "text": "The DMR System is made of several components:   Command Line Interface: dmr-cli",
+            "text": "The DMR System is made of several components:   Command Line Interface: dmr-cli  Server and Database",
             "title": "Overview"
         },
         {
