@@ -52,6 +52,8 @@ User can remove a sample from the library via the command line.
 
 System downloads MP3 from YouTube and adds to library.
 
+[U14: Add Song from YouTube](use-cases/u14)
+
 ## [Tracking Custom Information](needs/#n2-tracking-custom-information)
 
 ### F5: Track Date Added

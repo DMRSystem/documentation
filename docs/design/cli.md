@@ -7,4 +7,3 @@
 ## Responsibilities
 
 * Allow users to Create, Remove, Update, Delete files in local and remote libraries.
-* 
