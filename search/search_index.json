@@ -72,7 +72,7 @@
         },
         {
             "location": "/requirements/features/",
-            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nU3: Remove Song via Command Line (with Command Line Arguments)\n\n\nU4: Remove Song via Command Line (without Command Line Arguments)\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nU5: Modify Song via Command Line (with Command Line Arguments)\n\n\nU6: Modify Song via Command Line (without Command Line Arguments)\n\n\nF4: List Songs via Command Line\n\u00b6\n\n\nUser can list all songs in the library via the command line.\n\n\nU7: List Songs via the Command Line\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF15: Add Song from YouTube URL\n\u00b6\n\n\nSystem downloads MP3 from YouTube and adds to library.\n\n\nTracking Custom Information\n\u00b6\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nF14: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF13: Switch between Song and Sample\n\u00b6\n\n\nOnce the user has added a Song to the library, the user can convert the song to a sample and vice versa.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist (by year then name (alphabetical)) via the command line.\n\n\nU12: Generate Chronological Playlist (with Command Line Arguments)\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.\n\n\nU13: Set up system via Command Line\n\n\nSecure Communications\n\u00b6",
+            "text": "Features\n\u00b6\n\n\nCRUD Operations on Library\n\u00b6\n\n\nF1: Add Song via Command Line\n\u00b6\n\n\nUser can add a song to the library via the command line.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF2: Remove Song via Command Line\n\u00b6\n\n\nUser can remove a song from the library via the command line.\n\n\nU3: Remove Song via Command Line (with Command Line Arguments)\n\n\nU4: Remove Song via Command Line (without Command Line Arguments)\n\n\nF3: Modifying Song information via the Command Line\n\u00b6\n\n\nUser can modify song information via the command line.\n\n\nU5: Modify Song via Command Line (with Command Line Arguments)\n\n\nU6: Modify Song via Command Line (without Command Line Arguments)\n\n\nF4: List Songs via Command Line\n\u00b6\n\n\nUser can list all songs in the library via the command line.\n\n\nU7: List Songs via the Command Line\n\n\nF9: Add Sample via Command Line\n\u00b6\n\n\nUser can add a sample to the library via the command line.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nF10: Remove Sample via Command Line\n\u00b6\n\n\nUser can remove a sample from the library via the command line.\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF15: Add Song from YouTube URL\n\u00b6\n\n\nSystem downloads MP3 from YouTube and adds to library.\n\n\nU14: Add Song from YouTube\n\n\nTracking Custom Information\n\u00b6\n\n\nF5: Track Date Added\n\u00b6\n\n\nSystem automatially tracks date added for each song.\n\n\nU1: Add Song via Command Line (with Command Line Arguments)\n\n\nU2: Add Song via Command Line (without Command Line Arguments)\n\n\nF6: Popularity\n\u00b6\n\n\nUser can modify popularity/rating for each song.\n\n\nF7: Number of Requests\n\u00b6\n\n\nSystem tracks number of times each song has been requested.\n\n\nF14: Number of Plays\n\u00b6\n\n\nSystem automatically tracks number of plays for each song.\n\n\nSongs vs. Samples\n\u00b6\n\n\nF8: Sample Tracking\n\u00b6\n\n\nSystem tracks samples separately from songs.\n\n\nU8: Add Sample via Command Line (with Command Line Arguments)\n\n\nU9: Add Sample via Command Line (without Command Line Arguments)\n\n\nU10: Remove Sample via Command Line (with Command Line Arguments)\n\n\nU11: Remove Sample via Command Line (without Command Line Arguments)\n\n\nF13: Switch between Song and Sample\n\u00b6\n\n\nOnce the user has added a Song to the library, the user can convert the song to a sample and vice versa.\n\n\nGenerating Playlists\n\u00b6\n\n\nF11: Chronological Playlist\n\u00b6\n\n\nUser can generate a chronological playlist (by year then name (alphabetical)) via the command line.\n\n\nU12: Generate Chronological Playlist (with Command Line Arguments)\n\n\nSetup from Scratch\n\u00b6\n\n\nF12: System Setup\n\u00b6\n\n\nUser can issue a single command via the command line to set up the entire system.\n\n\nU13: Set up system via Command Line\n\n\nSecure Communications\n\u00b6",
             "title": "Features"
         },
         {
@@ -117,7 +117,7 @@
         },
         {
             "location": "/requirements/features/#f15-add-song-from-youtube-url",
-            "text": "System downloads MP3 from YouTube and adds to library.",
+            "text": "System downloads MP3 from YouTube and adds to library.  U14: Add Song from YouTube",
             "title": "F15: Add Song from YouTube URL"
         },
         {
@@ -768,6 +768,51 @@
         {
             "location": "/requirements/use-cases/u13/#features",
             "text": "F12: System Setup",
+            "title": "Features"
+        },
+        {
+            "location": "/requirements/use-cases/u14/",
+            "text": "U14: Add Song from YouTube\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host adds a song to the system by specifying a youtube URL in the CLI.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSong is not in System\n\n\nPostcondition(s)\n\u00b6\n\n\nSong is in System\n\n\nSteps\n\u00b6\n\n\n1) Radio Host enters the following command:\n\n\ndmr add songFromVideo <youtubeURL> --name\n=\n<songName> --artist\n=\n<songArtist> --year\n=\n<songYear>\n\n\n\n\n\n2) System downloads mp3 from youtube.\n\n\n3) System asks user to confirm download and metadata.\n\n\n4) System stores the song locally and in the remote repository.\n\n\nAlternate\n\u00b6\n\n\nIf the user enters malformed content, the system asks the user to enter new content.\n\n\nFeatures\n\u00b6\n\n\nF15: Add Song from YouTube URL",
+            "title": "U14: Add Song from YouTube"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#u14-add-song-from-youtube",
+            "text": "",
+            "title": "U14: Add Song from YouTube"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#description",
+            "text": "Radio Host adds a song to the system by specifying a youtube URL in the CLI.",
+            "title": "Description"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#actors",
+            "text": "Radio Host",
+            "title": "Actor(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#preconditions",
+            "text": "Song is not in System",
+            "title": "Precondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#postconditions",
+            "text": "Song is in System",
+            "title": "Postcondition(s)"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#steps",
+            "text": "1) Radio Host enters the following command:  dmr add songFromVideo <youtubeURL> --name = <songName> --artist = <songArtist> --year = <songYear>  2) System downloads mp3 from youtube.  3) System asks user to confirm download and metadata.  4) System stores the song locally and in the remote repository.",
+            "title": "Steps"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#alternate",
+            "text": "If the user enters malformed content, the system asks the user to enter new content.",
+            "title": "Alternate"
+        },
+        {
+            "location": "/requirements/use-cases/u14/#features",
+            "text": "F15: Add Song from YouTube URL",
             "title": "Features"
         },
         {
