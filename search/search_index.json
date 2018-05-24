@@ -827,7 +827,7 @@
         },
         {
             "location": "/design/cli/",
-            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick\n with \nclick_shell\n\n\n\n\nResponsibilities\n\u00b6\n\n\n\n\nAllow users to Create, Remove, Update, Delete files in local and remote libraries.",
+            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick\n with \nclick_shell\n\n\n\n\nResponsibilities\n\u00b6\n\n\n\n\nAllow users to Create, Remove, Update, Delete files in local and remote libraries.\n\n\n\n\nOverview\n\u00b6",
             "title": "CLI"
         },
         {
@@ -844,6 +844,11 @@
             "location": "/design/cli/#responsibilities",
             "text": "Allow users to Create, Remove, Update, Delete files in local and remote libraries.",
             "title": "Responsibilities"
+        },
+        {
+            "location": "/design/cli/#overview",
+            "text": "",
+            "title": "Overview"
         },
         {
             "location": "/design/server/",

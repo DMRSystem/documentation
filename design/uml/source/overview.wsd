@@ -1,0 +1,124 @@
+@startuml overview
+
+namespace dmr {
+   namespace cli {
+       namespace command {
+           namespace add {
+               namespace subcommand {
+                   namespace song {
+                   }
+                   namespace sample {
+                   }
+               }
+           }
+           namespace remove {
+               namespace subcommand {
+                   namespace song {
+                   }
+                   namespace sample {
+                   }
+               }
+           }
+           namespace edit {
+               namespace subcommand {
+                   namespace song {
+                   }
+               }
+           }
+           namespace list {
+               namespace subcommand {
+                   namespace songs {
+                   }
+               }
+           }
+           namespace generate {
+               namespace subcommand {
+                   namespace playlist {
+                   }
+               }
+           }
+           namespace setup {
+           }
+       }
+   }
+   namespace controller {
+       namespace add {
+           namespace song {
+           }
+           namespace sample {
+           }
+       }
+       namespace remove {
+           namespace song {
+           }
+           namespace sample {
+           }
+       }
+       namespace edit {
+           namespace song {
+           }
+       }
+       namespace list {
+           namespace songs {
+           }
+       }
+       namespace generate {
+           namespace playlist {
+           }
+       }
+       namespace setup {
+       }
+   }
+}
+
+class dmr.controller.add.song.SongAdder 
+class dmr.controller.add.sample.SampleAdder 
+class dmr.controller.remove.song.SongRemover 
+class dmr.controller.remove.sample.SampleRemover 
+class dmr.controller.edit.song.SongEditor
+class dmr.controller.list.songs.SongsLister
+class dmr.controller.generate.playlist.PlaylistGenerator
+class dmr.controller.setup.SetupController
+
+class dmr.cli.main << (M, orchid) >>
+class dmr.cli.command.add.add << (M, orchid) >>
+class dmr.cli.command.remove.remove << (M, orchid) >>
+class dmr.cli.command.edit.edit << (M, orchid) >>
+class dmr.cli.command.list.list << (M, orchid) >>
+class dmr.cli.command.generate.generate << (M, orchid) >>
+class dmr.cli.command.setup.setup << (M, orchid) >>
+
+class dmr.cli.command.add.subcommand.song.song << (M, orchid) >>
+class dmr.cli.command.add.subcommand.sample.sample << (M, orchid) >>
+class dmr.cli.command.remove.subcommand.song.song << (M, orchid) >>
+class dmr.cli.command.remove.subcommand.sample.sample << (M, orchid) >>
+class dmr.cli.command.edit.subcommand.song.song << (M, orchid) >>
+class dmr.cli.command.list.subcommand.songs.songs << (M, orchid) >>
+class dmr.cli.command.generate.subcommand.playlist.playlist << (M, orchid) >>
+
+dmr.cli.main --> dmr.cli.command.add.add
+dmr.cli.main --> dmr.cli.command.remove.remove
+dmr.cli.main --> dmr.cli.command.edit.edit
+dmr.cli.main --> dmr.cli.command.list.list
+dmr.cli.main --> dmr.cli.command.generate.generate
+dmr.cli.main --> dmr.cli.command.setup.setup
+
+dmr.cli.command.add.add --> dmr.cli.command.add.subcommand.song.song
+dmr.cli.command.add.add --> dmr.cli.command.add.subcommand.sample.sample
+dmr.cli.command.remove.remove --> dmr.cli.command.remove.subcommand.song.song
+dmr.cli.command.remove.remove --> dmr.cli.command.remove.subcommand.sample.sample
+dmr.cli.command.edit.edit --> dmr.cli.command.edit.subcommand.song.song
+dmr.cli.command.list.list --> dmr.cli.command.list.subcommand.songs.songs
+dmr.cli.command.generate.generate --> dmr.cli.command.generate.subcommand.playlist.playlist
+dmr.cli.command.setup.setup --> dmr.controller.setup.SetupController
+
+dmr.cli.command.add.subcommand.song.song --> dmr.controller.add.song.SongAdder
+dmr.cli.command.add.subcommand.sample.sample --> dmr.controller.add.sample.SampleAdder
+dmr.cli.command.remove.subcommand.song.song --> dmr.controller.remove.song.SongRemover
+dmr.cli.command.remove.subcommand.sample.sample --> dmr.controller.remove.sample.SampleRemover
+dmr.cli.command.edit.subcommand.song.song --> dmr.controller.edit.song.SongEditor
+dmr.cli.command.list.subcommand.songs.songs --> dmr.controller.list.songs.SongsLister
+dmr.cli.command.generate.subcommand.playlist.playlist --> dmr.controller.generate.playlist.PlaylistGenerator
+
+
+@enduml
