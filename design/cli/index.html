@@ -622,6 +622,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#extensibility" title="Extensibility" class="md-nav__link">
+    Extensibility
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#click-command-groups" title="Click Command Groups" class="md-nav__link">
+    Click Command Groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency-injection" title="Dependency Injection" class="md-nav__link">
+    Dependency Injection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pass_controller" title="@pass_controller" class="md-nav__link">
+    @pass_controller
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -691,6 +725,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#extensibility" title="Extensibility" class="md-nav__link">
+    Extensibility
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#click-command-groups" title="Click Command Groups" class="md-nav__link">
+    Click Command Groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency-injection" title="Dependency Injection" class="md-nav__link">
+    Dependency Injection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pass_controller" title="@pass_controller" class="md-nav__link">
+    @pass_controller
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -721,6 +789,14 @@
 </ul>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p><img alt="overview.svg" src="../uml/images/overview.svg" /></p>
+<h2 id="extensibility">Extensibility<a class="headerlink" href="#extensibility" title="Permanent link">&para;</a></h2>
+<p>In order to make adding mew commands easier, we aim to follow the Open-Closed principle. Thus, new functionality should be able to be added without modifying existing code. Click Command Groups, Dependency injection, and <code>@pass_controller</code> help us to abide by OCP.</p>
+<h3 id="click-command-groups">Click Command Groups<a class="headerlink" href="#click-command-groups" title="Permanent link">&para;</a></h3>
+<p>The entry point, the <code>dmr</code> command, is itself a command group. Other subcommands such as <code>add</code> and <code>remove</code> can be nested under the <code>dmr</code> command using click's <code>Group.add_command()</code> to create <code>dmr add</code> and <code>dmr remove</code>. Ideally, the names of the each of the subcommands would be obtained from a file, so that source code does not have to be modified to modify the command groups. COmmand groups can be nested recursively.</p>
+<h3 id="dependency-injection">Dependency Injection<a class="headerlink" href="#dependency-injection" title="Permanent link">&para;</a></h3>
+<p>The Dependency Inversion Principle (DIP) helps us to abide by OCP. We use the Python <a href="http://python-dependency-injector.ets-labs.org/index.html">dependency_injector</a> framework to enable DIP. Each controller's module should have a container and (perhaps several) providers which specify how to wire all of the controller's dependencies. Containers can reference lower level containers and providers, but they should not reference higher level containers and providers.</p>
+<h3 id="pass_controller"><code>@pass_controller</code><a class="headerlink" href="#pass_controller" title="Permanent link">&para;</a></h3>
+<p>The <code>utils.pass_controller</code> decorator is similar to the suggested <code>pass_obj</code> decorator in the click documentation. It takes in, as an argument, a controller's provider and returns a function that will invoke the provider and pass the controller into the decorated function.</p>
                 
                   
                 

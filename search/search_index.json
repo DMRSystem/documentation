@@ -827,7 +827,7 @@
         },
         {
             "location": "/design/cli/",
-            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick\n with \nclick_shell\n\n\n\n\nResponsibilities\n\u00b6\n\n\n\n\nAllow users to Create, Remove, Update, Delete files in local and remote libraries.\n\n\n\n\nOverview\n\u00b6",
+            "text": "CLI\n\u00b6\n\n\nTechnologies\n\u00b6\n\n\n\n\nclick\n with \nclick_shell\n\n\n\n\nResponsibilities\n\u00b6\n\n\n\n\nAllow users to Create, Remove, Update, Delete files in local and remote libraries.\n\n\n\n\nOverview\n\u00b6\n\n\n\n\nExtensibility\n\u00b6\n\n\nIn order to make adding mew commands easier, we aim to follow the Open-Closed principle. Thus, new functionality should be able to be added without modifying existing code. Click Command Groups, Dependency injection, and \n@pass_controller\n help us to abide by OCP.\n\n\nClick Command Groups\n\u00b6\n\n\nThe entry point, the \ndmr\n command, is itself a command group. Other subcommands such as \nadd\n and \nremove\n can be nested under the \ndmr\n command using click's \nGroup.add_command()\n to create \ndmr add\n and \ndmr remove\n. Ideally, the names of the each of the subcommands would be obtained from a file, so that source code does not have to be modified to modify the command groups. COmmand groups can be nested recursively.\n\n\nDependency Injection\n\u00b6\n\n\nThe Dependency Inversion Principle (DIP) helps us to abide by OCP. We use the Python \ndependency_injector\n framework to enable DIP. Each controller's module should have a container and (perhaps several) providers which specify how to wire all of the controller's dependencies. Containers can reference lower level containers and providers, but they should not reference higher level containers and providers.\n\n\n@pass_controller\n\u00b6\n\n\nThe \nutils.pass_controller\n decorator is similar to the suggested \npass_obj\n decorator in the click documentation. It takes in, as an argument, a controller's provider and returns a function that will invoke the provider and pass the controller into the decorated function.",
             "title": "CLI"
         },
         {
@@ -849,6 +849,26 @@
             "location": "/design/cli/#overview",
             "text": "",
             "title": "Overview"
+        },
+        {
+            "location": "/design/cli/#extensibility",
+            "text": "In order to make adding mew commands easier, we aim to follow the Open-Closed principle. Thus, new functionality should be able to be added without modifying existing code. Click Command Groups, Dependency injection, and  @pass_controller  help us to abide by OCP.",
+            "title": "Extensibility"
+        },
+        {
+            "location": "/design/cli/#click-command-groups",
+            "text": "The entry point, the  dmr  command, is itself a command group. Other subcommands such as  add  and  remove  can be nested under the  dmr  command using click's  Group.add_command()  to create  dmr add  and  dmr remove . Ideally, the names of the each of the subcommands would be obtained from a file, so that source code does not have to be modified to modify the command groups. COmmand groups can be nested recursively.",
+            "title": "Click Command Groups"
+        },
+        {
+            "location": "/design/cli/#dependency-injection",
+            "text": "The Dependency Inversion Principle (DIP) helps us to abide by OCP. We use the Python  dependency_injector  framework to enable DIP. Each controller's module should have a container and (perhaps several) providers which specify how to wire all of the controller's dependencies. Containers can reference lower level containers and providers, but they should not reference higher level containers and providers.",
+            "title": "Dependency Injection"
+        },
+        {
+            "location": "/design/cli/#pass_controller",
+            "text": "The  utils.pass_controller  decorator is similar to the suggested  pass_obj  decorator in the click documentation. It takes in, as an argument, a controller's provider and returns a function that will invoke the provider and pass the controller into the decorated function.",
+            "title": "@pass_controller"
         },
         {
             "location": "/design/server/",
