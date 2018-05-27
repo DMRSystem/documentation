@@ -18,7 +18,7 @@ In order to make adding mew commands easier, we aim to follow the Open-Closed pr
 
 ### Click Command Groups
 
-The entry point, the `dmr` command, is itself a command group. Other subcommands such as `add` and `remove` can be nested under the `dmr` command using click's `Group.add_command()` to create `dmr add` and `dmr remove`. Ideally, the names of the each of the subcommands would be obtained from a file, so that source code does not have to be modified to modify the command groups. COmmand groups can be nested recursively.
+The entry point, the `dmr` command, is itself a command group. Other subcommands such as `add` and `remove` can be nested under the `dmr` command using click's `Group.add_command()` to create `dmr add` and `dmr remove`. Ideally, the names of the each of the subcommands would be obtained from a file, so that source code does not have to be modified to modify the command groups. Command groups can be nested recursively.
 
 ### Dependency Injection
 
