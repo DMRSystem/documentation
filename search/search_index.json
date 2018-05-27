@@ -727,7 +727,7 @@
         },
         {
             "location": "/requirements/use-cases/u13/",
-            "text": "U13: Set up system via Command Line\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host initializes system for local use using the CLI.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSystem is not set up locally\n\n\nPostcondition(s)\n\u00b6\n\n\nSystem is set up locally\n\n\nSteps\n\u00b6\n\n\n1) Radio Host enters the following command:\n\n\ndmr setup\n\n\n\n\n\n2) System downloads all requisite software.\n\n\n3) System downloads library.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to software download locations.\n\n\n3) System displays \nCannot connect to <software download location>.\n\n\n\n\n3) System cannot connect to repository.\n\n\n4) System displays \nCannot connect to repository.\n\n\nFeatures\n\u00b6\n\n\nF12: System Setup",
+            "text": "U13: Set up system via Command Line\n\u00b6\n\n\nDescription\n\u00b6\n\n\nRadio Host initializes system for local use using the CLI.\n\n\nActor(s)\n\u00b6\n\n\nRadio Host\n\n\nPrecondition(s)\n\u00b6\n\n\nSystem is not set up locally\n\n\nPostcondition(s)\n\u00b6\n\n\nSystem is set up locally\n\n\nSteps\n\u00b6\n\n\n1) Radio Host enters the following command:\n\n\ndmr setup\n\n\n\n\n\n2) System downloads all requisite software.\n\n\n\n\nMixxx\n\n\n\n\n3) System downloads library.\n\n\nAlternate\n\u00b6\n\n\n2) System cannot connect to software download locations.\n\n\n3) System displays \nCannot connect to <software download location>.\n\n\n\n\n3) System cannot connect to repository.\n\n\n4) System displays \nCannot connect to repository.\n\n\nFeatures\n\u00b6\n\n\nF12: System Setup",
             "title": "U13: Set up system via Command Line"
         },
         {
@@ -757,7 +757,7 @@
         },
         {
             "location": "/requirements/use-cases/u13/#steps",
-            "text": "1) Radio Host enters the following command:  dmr setup  2) System downloads all requisite software.  3) System downloads library.",
+            "text": "1) Radio Host enters the following command:  dmr setup  2) System downloads all requisite software.   Mixxx   3) System downloads library.",
             "title": "Steps"
         },
         {
